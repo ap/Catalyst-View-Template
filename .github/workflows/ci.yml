@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Regular tests
         run: |
+            cpanm --installdeps --notest .
             perl Makefile.PL
             make
             make test
