@@ -233,7 +233,7 @@ but which should not be taken when L</render> is called directly.
 This renders the template named by C<$template> and the L</template_ext>
 configuration option into C<$output>, passing it the values from C<\%vars>,
 and returns true on success.
-In other words, the default implementation is a shorthand for this:
+In other words, the default implementation means it is a shorthand for this:
 
  $view->template->process( $template . $view->template_ext, \%vars, \$output )
 
