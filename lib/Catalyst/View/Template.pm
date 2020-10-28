@@ -42,7 +42,7 @@ sub process {
 	my ( $self, $c ) = ( shift, @_ );
 
 	my %vars = %{ $c->stash };
-	my $template ||= $c->stash->{'template'} || $c->action->reverse;
+	my $template = $c->stash->{'template'} || $c->action->reverse;
 
 	my $output;
 	$self->render          ( $c, $template, \%vars, \$output )
