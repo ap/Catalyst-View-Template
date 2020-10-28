@@ -1,5 +1,9 @@
 Release history for Catalyst-View-Template
 
+1.101 Wed 28 Oct 2020
+	- Code editing mistake fix
+	- No functional changes
+
 1.100 Wed 28 Oct 2020
 	- Corrected signature for process method
 
