@@ -2,7 +2,7 @@ use strict; use warnings;
 
 package Catalyst::View::Template;
 
-our $VERSION = '1.001';
+our $VERSION = '1.100';
 
 use MRO::Compat ();
 use Catalyst::Utils ();
