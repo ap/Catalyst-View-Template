@@ -32,7 +32,7 @@ with the following design objectives:
 
 =item * To nevertheless integrate seamlessly with L<Catalyst>
 
-=item * To make all parts of its behaviour easy to augment
+=item * To be easily augmented in behaviour by overriding or modifying methods
 
 Taken together with the other objectives, this should make it easy to repurpose
 for any view class in which you might want to use Template Toolkit templates.
@@ -41,6 +41,7 @@ for any view class in which you might want to use Template Toolkit templates.
 
 This is a rethink of L<Catalyst::View::TT> whose focus is on
 providing lots of L<Catalyst>-specific features on top of Template Toolkit,
+but which are hard to augment without copy-pasting code from it, and
 which ultimately only make templates harder to reuse or test in other contexts.
 
 =head1 DEFAULT OPERATION
