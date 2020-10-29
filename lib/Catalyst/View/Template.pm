@@ -41,10 +41,10 @@ sub new_template {
 sub process {
 	my ( $self, $c ) = ( shift, @_ );
 
-	my %vars = %{ $c->stash };
 	my $template = $c->stash->{'template'} || $c->action->reverse;
-
+	my %vars = %{ $c->stash };
 	my $output;
+
 	$self->render          ( $c, $template, \%vars, \$output )
 	? $self->process_output( $c, $template, \%vars, \$output )
 	: $self->process_error ( $c, $template, \%vars, )
