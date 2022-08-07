@@ -9,23 +9,27 @@ my %META = (
 	author      => 'Aristotle Pagaltzis <pagaltzis@gmx.de>',
 	license     => 'perl_5',
 	x_copyright => { holder => 'Aristotle Pagaltzis', year => 2020 },
-	prereqs     => {
-		runtime => { requires => {qw(
-			perl             5.008001
-			Catalyst           5.7000
-			MRO::Compat             0
-		)} },
-		test => { requires => {qw(
-			Test::More              0
-			Catalyst::Test          0
-			Template                0
-		)} },
-	},
-	dynamic_config => 0,
-	resources      => {
+	resources   => {
 		license    => [ 'http://dev.perl.org/licenses/' ],
 		repository => { type => 'git', url => "$sc.git", web => $sc },
 		bugtracker => { web => $bt },
+	},
+	dynamic_config => 0,
+	prereqs => {
+		runtime => {
+			requires => {qw(
+				perl             5.008001
+				Catalyst           5.7000
+				MRO::Compat             0
+			)},
+		},
+		test => {
+			requires => {qw(
+				Test::More              0
+				Catalyst::Test          0
+				Template                0
+			)},
+		},
 	},
 );
 
